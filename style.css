@@ -1,0 +1,326 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.btn {
+    width: 30px;                                                                                                
+    height: 30px;
+    border-radius: 20px;
+    background-color: rgb(146, 146, 146);
+    border: 2px solid gray;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+}
+.btn span {
+    font-size: 20px;
+}
+.btn span.dark-mode-icon::after {
+    content: "🌑";
+}
+.btn span.dark-mode-icon.dark::after {
+    content: "☀️";
+    background-color: rgb(146, 146, 146);
+}
+.dark {
+    color: whitesmoke;
+    background-color:rgb(40, 40, 40);
+}
+.dark .search-box{
+    background-color: #929292;
+    border: white;
+}
+.dark nav{
+    background-color:rgb(88, 85, 85);
+}
+.dark nav .nav-left button{
+    background-color: transparent;
+}
+.dark nav .nav-left a{
+    background-color: transparent;
+}
+.dark .back-button button{
+    background-color: #5a5a5a;
+}
+.dark .post{
+    background-color: rgb(90, 90, 90);
+}
+.dark .comments h3{
+    color: whitesmoke;
+}
+.dark .post p, hr{
+    color: whitesmoke;
+}
+.dark .top-bar-right .profile-button{
+    background-color: transparent;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    background-color: white;
+}
+.nav-left{
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin-right: 5px;
+}
+.nav-left img{
+    width: 35px;
+    height: 35px;
+}
+.nav-left button {
+    color: black;
+    background-color: white;
+    outline: 0;
+    border: 0;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+.nav-left a {
+    color: black;
+    background-color: white;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    text-decoration: none;
+    line-height: 40px;
+}
+.search-box {
+    border: 1px solid lightgray;
+    margin-right: 15px;
+    padding: 8px;
+    border-radius: 25px;
+    align-items: center;
+    background-color: lightgray;
+    margin-left: 10px;
+}
+.search-box img{
+    width: 18px;
+}
+.search-box input{
+    width: 780px;
+    height: 20px;
+    border: 0;
+    outline: 0;
+    background: transparent;
+}
+.nav-right {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+.nav-right img{
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+}
+.nav-right .profile{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+.main {
+    margin-top: 80px;
+    padding: 5px 80px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+.main .image{
+    margin: 10px;
+}
+.main .publisher{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5px;
+}
+
+.main .image img{
+    width: 250px;
+    border-radius: 10px;
+    margin-right: 5px;
+}
+.main .publisher img{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+.main .publisher p{
+    line-height: 40px;
+    font-size: 15px;
+    margin-left: 3px;
+}
+/* -----------photos--------------- */
+.back-button button{
+    float: left;
+    margin-left: 30px;
+    width: 45px;
+    height: 45px;
+    border-radius: 30px;
+    border: 0;
+    background-color: white;
+}
+.back-button button:hover {
+    background-color: lightgray;
+    cursor: pointer;
+}
+.back-button button img{
+    width: 20px;
+}
+.post{
+    box-sizing: border-box;
+    width: 730px;
+    height: 45%;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    margin-top: 100px;
+    margin-left: 280px;
+    margin-right: 150px;
+    border-radius: 20px;
+}
+.post .picture img{
+    width: 380px;
+    margin: 10px;
+    border-radius: 20px;
+}
+.side-bar-top {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+.top-bar-left{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 10px;
+    gap: 15px;
+    cursor: pointer;
+}
+.top-bar-left img{
+    margin-top: 20px;
+    width: 20px;
+    height: 20px;
+}
+.top-bar-middle{
+    width: 50px;
+}
+.top-bar-right button{
+    background-color: white;
+    border: none;
+    font-size: 18px;
+    margin-top: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.top-bar-right button img{
+    width: 10px;
+    margin-left: 5px;
+}
+.top-bar-right .save-button{
+    border-radius: 20px;
+    color: white;
+    background-color: red;
+    width: 60px;
+    height: 40px;
+}
+.main-two {
+    margin-top: 30px;
+    padding: 5px 80px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+.main-two .image{
+    margin: 10px;
+}
+.main-two .publisher{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5px;
+}
+
+.main-two .image img{
+    width: 250px;
+    border-radius: 10px;
+    margin-right: 5px;
+}
+.main-two .publisher img{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+.main-two .publisher p{
+    line-height: 40px;
+    font-size: 15px;
+    margin-left: 3px;
+}
+.side-bar-bottom{
+    padding: 20px;
+}
+.comments{
+    margin-top: 30px;
+}
+.comments h3{
+    margin-bottom: 5px;
+    color: black;
+}
+.no-comments{
+    margin-top: 120px;
+    margin-left: 50px;
+}
+.no-comments p{
+    color: #5a5a5a;
+}
+/* -----------Profile Page------------- */
+.profile-info{
+    margin-top: 90px;
+    width: 500px;
+    margin-left: 30%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.profile-info img{
+    width: 100px;
+    border-radius: 50px;
+    margin: 10px;
+}
+.profile-info h1{
+    margin-bottom: 5px;
+}
+.profile-info .profile-button{
+    margin: 10px;
+}
+.profile-info .profile-button button{
+    outline: 0;
+    border: 0;
+    font-size: 15px;
+    width: 100px;
+    height: 30px;
+    border-radius: 20px;
+}
+.profile-info .profile-button button:hover{
+    background-color: #cbcbcb;
+}
+.about{
+    width: 50px;
+    height: 50px;
+    border: 1px solid gray;
+    border-radius: 25px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 30px;
+    font-weight: 800;
+    cursor: pointer;
+    position: fixed;
+    background-color: whitesmoke;
+    bottom: 20px;
+    right: 20px;
+}
